@@ -13,6 +13,10 @@
 		4B5B0A1F2AB3A400008B955C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B0A1D2AB3A400008B955C /* Main.storyboard */; };
 		4B5B0A212AB3A401008B955C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B0A202AB3A401008B955C /* Assets.xcassets */; };
 		4B5B0A242AB3A401008B955C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B5B0A222AB3A401008B955C /* LaunchScreen.storyboard */; };
+		4B60F76F2ABF93AD009681C9 /* IngresoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B60F76E2ABF93AD009681C9 /* IngresoViewController.swift */; };
+		4B60F7712ABF99DA009681C9 /* HogarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B60F7702ABF99DA009681C9 /* HogarViewController.swift */; };
+		4B60F7732ABF9CA5009681C9 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B60F7722ABF9CA5009681C9 /* RegistroViewController.swift */; };
+		4B60F7792ABFA74A009681C9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B60F7782ABFA74A009681C9 /* UIViewController.swift */; };
 		4B9B71602ABF83D100DEBB6C /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B715F2ABF83D100DEBB6C /* Roboto-Regular.ttf */; };
 		4B9B71642ABF83F400DEBB6C /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B71612ABF83F300DEBB6C /* Montserrat-Medium.ttf */; };
 		4B9B71652ABF83F400DEBB6C /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B71622ABF83F300DEBB6C /* Montserrat-Bold.ttf */; };
@@ -28,6 +32,10 @@
 		4B5B0A202AB3A401008B955C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4B5B0A232AB3A401008B955C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B5B0A252AB3A401008B955C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B60F76E2ABF93AD009681C9 /* IngresoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngresoViewController.swift; sourceTree = "<group>"; };
+		4B60F7702ABF99DA009681C9 /* HogarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HogarViewController.swift; sourceTree = "<group>"; };
+		4B60F7722ABF9CA5009681C9 /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		4B60F7782ABFA74A009681C9 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		4B9B715F2ABF83D100DEBB6C /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		4B9B71612ABF83F300DEBB6C /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		4B9B71622ABF83F300DEBB6C /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
@@ -72,6 +80,10 @@
 				4B5B0A202AB3A401008B955C /* Assets.xcassets */,
 				4B5B0A222AB3A401008B955C /* LaunchScreen.storyboard */,
 				4B5B0A252AB3A401008B955C /* Info.plist */,
+				4B60F76E2ABF93AD009681C9 /* IngresoViewController.swift */,
+				4B60F7702ABF99DA009681C9 /* HogarViewController.swift */,
+				4B60F7722ABF9CA5009681C9 /* RegistroViewController.swift */,
+				4B60F7782ABFA74A009681C9 /* UIViewController.swift */,
 			);
 			path = oficinas_casas;
 			sourceTree = "<group>";
@@ -162,6 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B60F7792ABFA74A009681C9 /* UIViewController.swift in Sources */,
+				4B60F7712ABF99DA009681C9 /* HogarViewController.swift in Sources */,
+				4B60F7732ABF9CA5009681C9 /* RegistroViewController.swift in Sources */,
+				4B60F76F2ABF93AD009681C9 /* IngresoViewController.swift in Sources */,
 				4B5B0A1C2AB3A400008B955C /* ViewController.swift in Sources */,
 				4B5B0A182AB3A400008B955C /* AppDelegate.swift in Sources */,
 				4B5B0A1A2AB3A400008B955C /* SceneDelegate.swift in Sources */,
