@@ -76,11 +76,11 @@
             </objects>
             <point key="canvasLocation" x="778" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--Ingreso View Controller-->
         <scene sceneID="V4K-y8-IPk">
             <objects>
-                <viewController id="Ot5-8U-EYb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Rdi-Zn-Tam">
+                <viewController storyboardIdentifier="IngresoViewController" id="Ot5-8U-EYb" customClass="IngresoViewController" customModule="oficinas_casas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rdi-Zn-Tam" customClass="Ingreso">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -152,7 +152,7 @@
                                     <color key="baseBackgroundColor" red="0.066666666669999999" green="0.32156862749999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Mgh-es-mNo" kind="presentation" modalPresentationStyle="fullScreen" id="alH-bf-rSv"/>
+                                    <action selector="btnIniciar:" destination="Ot5-8U-EYb" eventType="touchUpInside" id="IXh-O3-uYt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZy-6D-Eqg">
@@ -230,6 +230,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5rB-s6-lDu"/>
+                    <connections>
+                        <outlet property="txtContrasena" destination="EJE-aa-Ly7" id="KQu-z4-TMO"/>
+                        <outlet property="txtCorreo" destination="FEm-y5-mfh" id="QjW-FH-gka"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pz5-s9-nuh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,10 +255,10 @@
             </objects>
             <point key="canvasLocation" x="5191.6030534351139" y="-511.26760563380282"/>
         </scene>
-        <!--View Controller-->
+        <!--Registro View Controller-->
         <scene sceneID="mEZ-jA-xYd">
             <objects>
-                <viewController id="wNh-pP-xs8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistroViewController" id="wNh-pP-xs8" customClass="RegistroViewController" customModule="oficinas_casas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VX4-SC-WCy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,7 +327,7 @@
                                 <color key="backgroundColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="7vU-gA-g54"/>
-                                    <constraint firstAttribute="width" constant="142" id="ok3-vF-Na6"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="142" id="ok3-vF-Na6"/>
                                 </constraints>
                                 <color key="tintColor" red="0.83529411760000005" green="0.86666666670000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
@@ -360,7 +364,7 @@
                                     <color key="baseBackgroundColor" red="0.066666666669999999" green="0.32156862749999998" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Mgh-es-mNo" kind="presentation" modalPresentationStyle="fullScreen" id="q9B-I7-F6L"/>
+                                    <action selector="btnRegistrarse:" destination="wNh-pP-xs8" eventType="touchUpInside" id="IBY-7k-JaJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -382,8 +386,10 @@
                             <constraint firstItem="ZPe-Kh-0Qi" firstAttribute="top" secondItem="Wg0-rW-QM6" secondAttribute="bottom" constant="45" id="Ihk-u8-K0I"/>
                             <constraint firstItem="gP1-Wt-vhj" firstAttribute="top" secondItem="qhb-lM-ZDh" secondAttribute="bottom" constant="50" id="JAS-22-ogT"/>
                             <constraint firstItem="x7q-tc-CJy" firstAttribute="leading" secondItem="YKx-D3-ZNE" secondAttribute="leading" constant="36" id="LzW-Eh-mee"/>
+                            <constraint firstItem="Hb3-RV-ylI" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gP1-Wt-vhj" secondAttribute="trailing" constant="8" symbolic="YES" id="Ng8-N2-2Os"/>
                             <constraint firstItem="aC0-7s-0sZ" firstAttribute="centerX" secondItem="VX4-SC-WCy" secondAttribute="centerX" id="OD1-0r-EuK"/>
                             <constraint firstItem="qhb-lM-ZDh" firstAttribute="top" secondItem="ZPe-Kh-0Qi" secondAttribute="bottom" constant="35" id="OwM-9Z-riy"/>
+                            <constraint firstItem="YKx-D3-ZNE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Iv8-lx-zb9" secondAttribute="trailing" symbolic="YES" id="Rvh-yv-U8T"/>
                             <constraint firstItem="Hb3-RV-ylI" firstAttribute="top" secondItem="JTz-au-RUY" secondAttribute="bottom" constant="44" id="SDs-we-Lce"/>
                             <constraint firstItem="YKx-D3-ZNE" firstAttribute="trailing" secondItem="JTz-au-RUY" secondAttribute="trailing" constant="36" id="SpF-ia-uKG"/>
                             <constraint firstItem="x7q-tc-CJy" firstAttribute="centerX" secondItem="VX4-SC-WCy" secondAttribute="centerX" id="VOX-oY-uTf"/>
@@ -394,25 +400,32 @@
                             <constraint firstItem="Iv8-lx-zb9" firstAttribute="leading" secondItem="YKx-D3-ZNE" secondAttribute="leading" constant="36" id="e9D-IM-XhJ"/>
                             <constraint firstItem="Iv8-lx-zb9" firstAttribute="top" secondItem="dTS-Ec-mbK" secondAttribute="bottom" constant="20" id="hfp-fT-n14"/>
                             <constraint firstItem="TKf-eg-0hX" firstAttribute="top" secondItem="x7q-tc-CJy" secondAttribute="bottom" constant="20" id="kEx-Q1-vZt"/>
-                            <constraint firstItem="dTS-Ec-mbK" firstAttribute="leading" secondItem="YKx-D3-ZNE" secondAttribute="leading" constant="36" id="rZh-w2-bRO"/>
+                            <constraint firstItem="YKx-D3-ZNE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TKf-eg-0hX" secondAttribute="trailing" symbolic="YES" id="lE2-Mm-fts"/>
+                            <constraint firstItem="dTS-Ec-mbK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="YKx-D3-ZNE" secondAttribute="leading" id="rZh-w2-bRO"/>
                             <constraint firstItem="YKx-D3-ZNE" firstAttribute="bottom" secondItem="gP1-Wt-vhj" secondAttribute="bottom" constant="43" id="rvy-FJ-myC"/>
                             <constraint firstItem="YKx-D3-ZNE" firstAttribute="trailing" secondItem="Wg0-rW-QM6" secondAttribute="trailing" constant="36" id="tPX-os-rnw"/>
                             <constraint firstItem="YKx-D3-ZNE" firstAttribute="trailing" secondItem="aC0-7s-0sZ" secondAttribute="trailing" constant="36" id="taf-B7-dcn"/>
+                            <constraint firstItem="YKx-D3-ZNE" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Am-4B-TRl" secondAttribute="trailing" symbolic="YES" id="ufk-nx-2pu"/>
                             <constraint firstItem="dTS-Ec-mbK" firstAttribute="top" secondItem="TKf-eg-0hX" secondAttribute="bottom" constant="9" id="unc-qx-Pfl"/>
                             <constraint firstItem="Wg0-rW-QM6" firstAttribute="top" secondItem="aC0-7s-0sZ" secondAttribute="bottom" constant="38" id="wIb-r1-hgN"/>
                             <constraint firstItem="YKx-D3-ZNE" firstAttribute="trailing" secondItem="x7q-tc-CJy" secondAttribute="trailing" constant="36" id="yrS-Rb-wFZ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sXn-dd-W5u"/>
+                    <connections>
+                        <outlet property="txtContrasena" destination="aC0-7s-0sZ" id="Aly-9F-gO0"/>
+                        <outlet property="txtCorreo" destination="dTS-Ec-mbK" id="zht-nF-G5W"/>
+                        <outlet property="txtNombre" destination="x7q-tc-CJy" id="DqH-xf-W5U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ife-gG-mNT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1885" y="691"/>
+            <point key="canvasLocation" x="1885" y="344"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Hogar View Controller-->
         <scene sceneID="jMR-ed-eW0">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Mgh-es-mNo" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HogarViewController" automaticallyAdjustsScrollViewInsets="NO" id="Mgh-es-mNo" customClass="HogarViewController" customModule="oficinas_casas" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Hum-qw-3uF"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" itemPositioning="centered" id="ruW-LI-Fes">
@@ -487,7 +500,7 @@
                     <tabBarItem key="tabBarItem" title="" image="Home" id="b4v-Pn-g0e"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g6p-7x-cJs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -519,8 +532,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="alH-bf-rSv"/>
-        <segue reference="6Ce-WV-jSm"/>
+        <segue reference="sMV-Jk-IYY"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Home" width="25" height="23"/>
