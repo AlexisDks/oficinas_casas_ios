@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -239,21 +240,151 @@
             </objects>
             <point key="canvasLocation" x="1886" y="-349"/>
         </scene>
-        <!--View Controller-->
+        <!--Principal View Controller-->
         <scene sceneID="ot8-Mx-gYe">
             <objects>
-                <viewController id="bAB-Tr-25y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Stv-yB-Eyi">
+                <viewController storyboardIdentifier="PrincipalViewController" id="bAB-Tr-25y" customClass="PrincipalViewController" customModule="oficinas_casas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="Stv-yB-Eyi">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDx-Sy-OIm">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="240"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPa-1v-Kyv">
+                                        <rect key="frame" x="36" y="73" width="321" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="yQU-Is-Bdt"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Buscar">
+                                            <color key="baseForegroundColor" name="AccentColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="aec-LD-Vkj" kind="show" id="i6O-pK-Kcw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstItem="jPa-1v-Kyv" firstAttribute="centerX" secondItem="mDx-Sy-OIm" secondAttribute="centerX" id="CJN-sg-Hcg"/>
+                                    <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="jPa-1v-Kyv" secondAttribute="bottom" constant="118" id="LnH-od-lhP"/>
+                                    <constraint firstItem="jPa-1v-Kyv" firstAttribute="leading" secondItem="mDx-Sy-OIm" secondAttribute="leading" constant="36" id="ntE-s4-XgI"/>
+                                    <constraint firstAttribute="height" constant="240" id="ru0-gf-QLr"/>
+                                    <constraint firstItem="jPa-1v-Kyv" firstAttribute="top" secondItem="mDx-Sy-OIm" secondAttribute="top" constant="73" id="zRk-xe-hKa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ca5-Yu-aqg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mDx-Sy-OIm" firstAttribute="leading" secondItem="ca5-Yu-aqg" secondAttribute="leading" id="1SE-lt-Xo0"/>
+                            <constraint firstItem="ca5-Yu-aqg" firstAttribute="trailing" secondItem="mDx-Sy-OIm" secondAttribute="trailing" id="2i8-z9-Pq5"/>
+                            <constraint firstItem="mDx-Sy-OIm" firstAttribute="top" secondItem="Stv-yB-Eyi" secondAttribute="top" id="5ah-1z-NmA"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Kso-If-C7Q"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Kso-If-C7Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fSU-ZW-KwD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5191.6030534351139" y="-511.26760563380282"/>
+        </scene>
+        <!--Busqueda-->
+        <scene sceneID="cm0-Of-wv7">
+            <objects>
+                <viewController storyboardIdentifier="BuscarViewController" id="aec-LD-Vkj" customClass="BuscarViewController" customModule="oficinas_casas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jeQ-Bb-TMU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMz-hZ-uUT">
+                                <rect key="frame" x="36" y="674" width="321" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="OYC-2M-qiv"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Buscar" cornerStyle="large"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="55" translatesAutoresizingMaskIntoConstraints="NO" id="tIH-BR-Ml1">
+                                <rect key="frame" x="36" y="143" width="321" height="36"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Busqueda Reciente" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltJ-P5-n8P">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="36"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXZ-YM-dEl">
+                                        <rect key="frame" x="239" y="0.0" width="82" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="NAg-zc-2YT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Limpiar">
+                                            <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                            <color key="baseForegroundColor" red="0.83529411764705885" green="0.8666666666666667" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="baseBackgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-rQ-acW">
+                                <rect key="frame" x="6" y="190" width="351" height="474"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="itemBuscar" rowHeight="118" id="I4I-Y0-ksX" customClass="BuscarTableViewCell" customModule="oficinas_casas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="351" height="118"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="I4I-Y0-ksX" id="0Q9-gU-sSg">
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="118"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RKE-X0-bAR">
+                                                    <rect key="frame" x="20" y="21" width="74.333333333333329" height="76"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Button">
+                                                        <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                        <color key="baseForegroundColor" red="0.24313725490196078" green="0.28627450980392155" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RKE-X0-bAR" firstAttribute="leading" secondItem="0Q9-gU-sSg" secondAttribute="leadingMargin" id="5AM-4i-d6U"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="RKE-X0-bAR" secondAttribute="bottom" constant="10" id="89B-IZ-xlw"/>
+                                                <constraint firstItem="RKE-X0-bAR" firstAttribute="top" secondItem="0Q9-gU-sSg" secondAttribute="topMargin" constant="10" id="JGH-im-qCW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnBusqueda" destination="RKE-X0-bAR" id="x0N-Nh-RmA"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hqw-pW-Ae2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hqw-pW-Ae2" firstAttribute="trailing" secondItem="tIH-BR-Ml1" secondAttribute="trailing" constant="36" id="9tB-dU-C0i"/>
+                            <constraint firstItem="tIH-BR-Ml1" firstAttribute="leading" secondItem="hqw-pW-Ae2" secondAttribute="leading" constant="36" id="MSg-TX-47j"/>
+                            <constraint firstItem="AL3-rQ-acW" firstAttribute="leading" secondItem="hqw-pW-Ae2" secondAttribute="leading" constant="6" id="Sps-x0-I7g"/>
+                            <constraint firstItem="hqw-pW-Ae2" firstAttribute="trailing" secondItem="AL3-rQ-acW" secondAttribute="trailing" constant="36" id="TBP-49-cKg"/>
+                            <constraint firstItem="hqw-pW-Ae2" firstAttribute="bottom" secondItem="FMz-hZ-uUT" secondAttribute="bottom" constant="35" id="UFp-2I-y2P"/>
+                            <constraint firstItem="tIH-BR-Ml1" firstAttribute="top" secondItem="hqw-pW-Ae2" secondAttribute="top" constant="40" id="awT-nU-hBY"/>
+                            <constraint firstItem="FMz-hZ-uUT" firstAttribute="top" secondItem="AL3-rQ-acW" secondAttribute="bottom" constant="10" id="sDT-6o-GaX"/>
+                            <constraint firstItem="hqw-pW-Ae2" firstAttribute="trailing" secondItem="FMz-hZ-uUT" secondAttribute="trailing" constant="36" id="sbO-MK-BTU"/>
+                            <constraint firstItem="AL3-rQ-acW" firstAttribute="top" secondItem="tIH-BR-Ml1" secondAttribute="bottom" constant="11" id="uRR-pz-fxI"/>
+                            <constraint firstItem="FMz-hZ-uUT" firstAttribute="leading" secondItem="hqw-pW-Ae2" secondAttribute="leading" constant="36" id="wHQ-23-zKA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Busqueda" id="XMR-N8-Q4c"/>
+                    <connections>
+                        <outlet property="BusquedaTableView" destination="AL3-rQ-acW" id="dhM-Ec-pyW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yEq-Zo-g5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6049.6183206106871" y="-511.26760563380282"/>
         </scene>
         <!--Registro View Controller-->
         <scene sceneID="mEZ-jA-xYd">
@@ -477,21 +608,98 @@
             </objects>
             <point key="canvasLocation" x="4265" y="838"/>
         </scene>
-        <!--View Controller-->
+        <!--Perfil View Controller-->
         <scene sceneID="Rzs-Kn-X0w">
             <objects>
-                <viewController id="8CQ-gw-fFX" sceneMemberID="viewController">
+                <viewController id="8CQ-gw-fFX" customClass="PerfilViewController" customModule="oficinas_casas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kpp-lk-FBO">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sbu-FC-nrB">
+                                <rect key="frame" x="36" y="106" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="0Wi-QH-zbc"/>
+                                    <constraint firstAttribute="height" constant="80" id="O1J-0Q-4OX"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aXZ-dY-zrB">
+                                <rect key="frame" x="6" y="206" width="351" height="563"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="itemPerfil" rowHeight="113" id="cT3-9v-WIP" customClass="PerfilTableViewCell" customModule="oficinas_casas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="351" height="113"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cT3-9v-WIP" id="9jG-oa-660">
+                                            <rect key="frame" x="0.0" y="0.0" width="351" height="113"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="left" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sz2-y7-Uyy">
+                                                    <rect key="frame" x="20" y="21" width="175.66666666666666" height="71"/>
+                                                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.050000000000000003"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Detalles de la cuenta">
+                                                        <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
+                                                        <color key="baseForegroundColor" red="0.12156862745098039" green="0.12156862745098039" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="sz2-y7-Uyy" secondAttribute="bottom" constant="10" id="4M7-ZC-s0d"/>
+                                                <constraint firstItem="sz2-y7-Uyy" firstAttribute="leading" secondItem="9jG-oa-660" secondAttribute="leadingMargin" id="Qm9-S9-fOu"/>
+                                                <constraint firstItem="sz2-y7-Uyy" firstAttribute="top" secondItem="9jG-oa-660" secondAttribute="topMargin" constant="10" id="e0x-HJ-c2k"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnDetalle" destination="sz2-y7-Uyy" id="HCK-5a-UNh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="3vx-oI-szz">
+                                <rect key="frame" x="134" y="114" width="107.66666666666669" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alexis Dks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTY-nr-drv">
+                                        <rect key="frame" x="6.6666666666666572" y="0.0" width="94.666666666666671" height="22"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" red="0.24313725490196078" green="0.28627450980392155" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7C-E8-Xds">
+                                        <rect key="frame" x="0.0" y="28" width="107.66666666666667" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="PVd-uq-FIh"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Editar cuenta">
+                                            <fontDescription key="titleFontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="12"/>
+                                            <color key="baseForegroundColor" red="0.83529411764705885" green="0.8666666666666667" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="baseBackgroundColor" red="0.96862745100000003" green="0.97254901959999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="IbX-WT-ed8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sbu-FC-nrB" firstAttribute="top" secondItem="IbX-WT-ed8" secondAttribute="top" constant="47" id="0NF-5O-Hxr"/>
+                            <constraint firstItem="3vx-oI-szz" firstAttribute="leading" secondItem="sbu-FC-nrB" secondAttribute="trailing" constant="18" id="C4y-ew-2Ng"/>
+                            <constraint firstItem="3vx-oI-szz" firstAttribute="top" secondItem="IbX-WT-ed8" secondAttribute="top" constant="55" id="LOP-aN-N8U"/>
+                            <constraint firstItem="aXZ-dY-zrB" firstAttribute="leading" secondItem="IbX-WT-ed8" secondAttribute="leading" constant="6" id="aqQ-O5-iSx"/>
+                            <constraint firstItem="IbX-WT-ed8" firstAttribute="bottom" secondItem="aXZ-dY-zrB" secondAttribute="bottom" id="d03-Ur-fgC"/>
+                            <constraint firstItem="IbX-WT-ed8" firstAttribute="trailing" secondItem="aXZ-dY-zrB" secondAttribute="trailing" constant="36" id="wYe-vZ-8ZG"/>
+                            <constraint firstItem="sbu-FC-nrB" firstAttribute="leading" secondItem="IbX-WT-ed8" secondAttribute="leading" constant="36" id="xOS-Eq-kCr"/>
+                            <constraint firstItem="aXZ-dY-zrB" firstAttribute="top" secondItem="sbu-FC-nrB" secondAttribute="bottom" constant="20" id="zXr-Ck-DFq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="Profile" id="BW2-hL-MHW"/>
+                    <connections>
+                        <outlet property="perfilTableView" destination="aXZ-dY-zrB" id="hJg-mA-b6l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n5X-Wz-0u6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4265" y="1539"/>
+            <point key="canvasLocation" x="4264.8854961832058" y="1538.7323943661972"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CF5-gK-0Rh">
@@ -532,7 +740,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="sMV-Jk-IYY"/>
+        <segue reference="6Ce-WV-jSm"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Home" width="25" height="23"/>
@@ -541,8 +749,14 @@
         <image name="Wishlist" width="25" height="22"/>
         <image name="facebook" width="15" height="28"/>
         <image name="google" width="29" height="29"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

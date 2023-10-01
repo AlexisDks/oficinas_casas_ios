@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4C1E4D2AC92E44000FD6B3 /* PrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4C1E4C2AC92E44000FD6B3 /* PrincipalViewController.swift */; };
 		4B5B0A182AB3A400008B955C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B0A172AB3A400008B955C /* AppDelegate.swift */; };
 		4B5B0A1A2AB3A400008B955C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B0A192AB3A400008B955C /* SceneDelegate.swift */; };
 		4B5B0A1C2AB3A400008B955C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B0A1B2AB3A400008B955C /* ViewController.swift */; };
@@ -21,9 +22,16 @@
 		4B9B71642ABF83F400DEBB6C /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B71612ABF83F300DEBB6C /* Montserrat-Medium.ttf */; };
 		4B9B71652ABF83F400DEBB6C /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B71622ABF83F300DEBB6C /* Montserrat-Bold.ttf */; };
 		4B9B71662ABF83F400DEBB6C /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B9B71632ABF83F400DEBB6C /* Montserrat-SemiBold.ttf */; };
+		4BAAD5EF2AC99E3B00DDC10C /* PerfilTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAAD5EE2AC99E3B00DDC10C /* PerfilTableViewCell.swift */; };
+		4BAAD5F12AC99F8900DDC10C /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAAD5F02AC99F8900DDC10C /* PerfilViewController.swift */; };
+		4BAAD5F32AC9A03000DDC10C /* Perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAAD5F22AC9A03000DDC10C /* Perfil.swift */; };
+		4BACE1712AC9B09B003C7611 /* Buscar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BACE1702AC9B09B003C7611 /* Buscar.swift */; };
+		4BACE1732AC9B0CB003C7611 /* BuscarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BACE1722AC9B0CB003C7611 /* BuscarViewController.swift */; };
+		4BACE1752AC9B0DC003C7611 /* BuscarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BACE1742AC9B0DC003C7611 /* BuscarTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B4C1E4C2AC92E44000FD6B3 /* PrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrincipalViewController.swift; sourceTree = "<group>"; };
 		4B5B0A142AB3A400008B955C /* oficinas_casas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = oficinas_casas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B5B0A172AB3A400008B955C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4B5B0A192AB3A400008B955C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +48,12 @@
 		4B9B71612ABF83F300DEBB6C /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		4B9B71622ABF83F300DEBB6C /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		4B9B71632ABF83F400DEBB6C /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		4BAAD5EE2AC99E3B00DDC10C /* PerfilTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTableViewCell.swift; sourceTree = "<group>"; };
+		4BAAD5F02AC99F8900DDC10C /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		4BAAD5F22AC9A03000DDC10C /* Perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Perfil.swift; sourceTree = "<group>"; };
+		4BACE1702AC9B09B003C7611 /* Buscar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buscar.swift; sourceTree = "<group>"; };
+		4BACE1722AC9B0CB003C7611 /* BuscarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarViewController.swift; sourceTree = "<group>"; };
+		4BACE1742AC9B0DC003C7611 /* BuscarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +86,8 @@
 		4B5B0A162AB3A400008B955C /* oficinas_casas */ = {
 			isa = PBXGroup;
 			children = (
+				4BACE16F2AC9B077003C7611 /* Buscar */,
+				4BAAD5ED2AC99E0600DDC10C /* Perfil */,
 				4B9B715D2ABF837C00DEBB6C /* Fonts */,
 				4B5B0A172AB3A400008B955C /* AppDelegate.swift */,
 				4B5B0A192AB3A400008B955C /* SceneDelegate.swift */,
@@ -83,6 +99,7 @@
 				4B60F76E2ABF93AD009681C9 /* IngresoViewController.swift */,
 				4B60F7702ABF99DA009681C9 /* HogarViewController.swift */,
 				4B60F7722ABF9CA5009681C9 /* RegistroViewController.swift */,
+				4B4C1E4C2AC92E44000FD6B3 /* PrincipalViewController.swift */,
 				4B60F7782ABFA74A009681C9 /* UIViewController.swift */,
 			);
 			path = oficinas_casas;
@@ -97,6 +114,26 @@
 				4B9B715F2ABF83D100DEBB6C /* Roboto-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4BAAD5ED2AC99E0600DDC10C /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				4BAAD5EE2AC99E3B00DDC10C /* PerfilTableViewCell.swift */,
+				4BAAD5F02AC99F8900DDC10C /* PerfilViewController.swift */,
+				4BAAD5F22AC9A03000DDC10C /* Perfil.swift */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		4BACE16F2AC9B077003C7611 /* Buscar */ = {
+			isa = PBXGroup;
+			children = (
+				4BACE1702AC9B09B003C7611 /* Buscar.swift */,
+				4BACE1722AC9B0CB003C7611 /* BuscarViewController.swift */,
+				4BACE1742AC9B0DC003C7611 /* BuscarTableViewCell.swift */,
+			);
+			path = Buscar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +212,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B60F7792ABFA74A009681C9 /* UIViewController.swift in Sources */,
+				4B4C1E4D2AC92E44000FD6B3 /* PrincipalViewController.swift in Sources */,
 				4B60F7712ABF99DA009681C9 /* HogarViewController.swift in Sources */,
+				4BACE1712AC9B09B003C7611 /* Buscar.swift in Sources */,
 				4B60F7732ABF9CA5009681C9 /* RegistroViewController.swift in Sources */,
+				4BAAD5F32AC9A03000DDC10C /* Perfil.swift in Sources */,
+				4BACE1732AC9B0CB003C7611 /* BuscarViewController.swift in Sources */,
+				4BAAD5F12AC99F8900DDC10C /* PerfilViewController.swift in Sources */,
 				4B60F76F2ABF93AD009681C9 /* IngresoViewController.swift in Sources */,
 				4B5B0A1C2AB3A400008B955C /* ViewController.swift in Sources */,
 				4B5B0A182AB3A400008B955C /* AppDelegate.swift in Sources */,
+				4BAAD5EF2AC99E3B00DDC10C /* PerfilTableViewCell.swift in Sources */,
 				4B5B0A1A2AB3A400008B955C /* SceneDelegate.swift in Sources */,
+				4BACE1752AC9B0DC003C7611 /* BuscarTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
