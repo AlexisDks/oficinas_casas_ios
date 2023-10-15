@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PerfilViewController: UIViewController, UITableViewDataSource {
+class PerfilViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var perfilTableView: UITableView!
     
     var perfilList: [Perfil] = []
@@ -15,6 +15,7 @@ class PerfilViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         perfilTableView.dataSource = self
+        perfilTableView.delegate = self
 
         perfilList.append(Perfil(dato_Lista: "Detalle de la cuenta"))
         perfilList.append(Perfil(dato_Lista: "Tarjetas y ofertas"))

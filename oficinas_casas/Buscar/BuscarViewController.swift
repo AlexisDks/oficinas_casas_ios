@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BuscarViewController: UIViewController, UITableViewDataSource {
+class BuscarViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var BusquedaTableView: UITableView!
     
     var busquedaList: [Buscar] = []
@@ -35,4 +35,6 @@ class BuscarViewController: UIViewController, UITableViewDataSource {
         cell.btnBusqueda.setTitle(buscar.busquedas, for: .normal)
         
         return cell
-    }}
+    }
+    
+}

@@ -28,6 +28,7 @@
 		4BACE1712AC9B09B003C7611 /* Buscar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BACE1702AC9B09B003C7611 /* Buscar.swift */; };
 		4BACE1732AC9B0CB003C7611 /* BuscarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BACE1722AC9B0CB003C7611 /* BuscarViewController.swift */; };
 		4BACE1752AC9B0DC003C7611 /* BuscarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BACE1742AC9B0DC003C7611 /* BuscarTableViewCell.swift */; };
+		4BD409072ADC1ECC00B35D8A /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4BD409062ADC1ECC00B35D8A /* Roboto-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		4BACE1702AC9B09B003C7611 /* Buscar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buscar.swift; sourceTree = "<group>"; };
 		4BACE1722AC9B0CB003C7611 /* BuscarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarViewController.swift; sourceTree = "<group>"; };
 		4BACE1742AC9B0DC003C7611 /* BuscarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarTableViewCell.swift; sourceTree = "<group>"; };
+		4BD409062ADC1ECC00B35D8A /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		4B9B715D2ABF837C00DEBB6C /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				4BD409062ADC1ECC00B35D8A /* Roboto-Medium.ttf */,
 				4B9B71622ABF83F300DEBB6C /* Montserrat-Bold.ttf */,
 				4B9B71612ABF83F300DEBB6C /* Montserrat-Medium.ttf */,
 				4B9B71632ABF83F400DEBB6C /* Montserrat-SemiBold.ttf */,
@@ -194,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BD409072ADC1ECC00B35D8A /* Roboto-Medium.ttf in Resources */,
 				4B9B71652ABF83F400DEBB6C /* Montserrat-Bold.ttf in Resources */,
 				4B9B71662ABF83F400DEBB6C /* Montserrat-SemiBold.ttf in Resources */,
 				4B9B71602ABF83D100DEBB6C /* Roboto-Regular.ttf in Resources */,
