@@ -35,7 +35,7 @@ class PerfilViewController: UIViewController, UITableViewDataSource, UITableView
         
         let perfil = perfilList[indexPath.row]
         
-        cell.btnDetalle.setTitle(perfil.dato_Lista, for: .normal)
+        cell.lblInformacion.text = perfil.dato_Lista
         
         return cell
     }

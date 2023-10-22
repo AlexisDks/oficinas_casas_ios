@@ -8,5 +8,7 @@
 import Foundation
 
 struct Buscar {
-    let busquedas: String
+    let imagen: String
+    let titulo: String
+    let descripcion: String
 }

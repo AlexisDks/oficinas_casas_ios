@@ -9,7 +9,7 @@ import UIKit
 
 class PerfilTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var btnDetalle: UIButton!
+    @IBOutlet weak var lblInformacion: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
